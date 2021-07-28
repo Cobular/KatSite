@@ -38,7 +38,7 @@
     max-width: 100%;
   }
 
-  .link {
+  /* .link {
     border-right: #434343;
     border-right-width: 1px;
     border-right-style: solid;
@@ -49,5 +49,5 @@
 
   .link:last-of-type {
     border-right-style: none;
-  }
+  } */
 </style>

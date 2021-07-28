@@ -34,6 +34,11 @@ async function convertImagePromises(path: string) {
       scale: 0.25,
       quality: 95,
       suffix: '.1_4.jpg'
+    },
+    {
+      scale: 0.1,
+      quality: 95,
+      suffix: '.1_10.jpg'
     }
   ]
 

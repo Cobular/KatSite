@@ -10,10 +10,6 @@
 		{
 			label: 'Home',
 			url: '/'
-		},
-		{
-			label: 'Contact Info',
-			url: '#contact'
 		}
 	]
 </script>
