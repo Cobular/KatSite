@@ -7,15 +7,13 @@
 
   function background_image_creator(url: string) {
     return `
-    background-image: url(${url}.1_1.jpg); 
+    background-image: url(${url}.large.jpg); 
     background-image: -webkit-image-set(
-      url(${url}.1_1.jpg) 4x,
-      url(${url}.1_2.jpg) 2x,
-      url(${url}.1_4.jpg) 1x);
+      url(${url}.large.jpg) 3x,
+      url(${url}.small.jpg) 1x);
     background-image: image-set(
-      url(${url}.1_1.jpg) 4x,
-      url(${url}.1_2.jpg) 2x);
-      url(${url}.1_4.jpg) 1x);
+      url(${url}.large.jpg) 3x,
+      url(${url}.small.jpg) 1x);
     `
   }
 </script>

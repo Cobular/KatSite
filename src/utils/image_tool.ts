@@ -1,6 +1,10 @@
+// Prodiuces a original, large (1000 in longest dim) and small (600 in longest dim) vesion of the images.
+// Origional will be used for all those larger than the given size
+
 import { promises } from 'fs'
 import { join } from 'path'
 import Jimp from 'jimp'
+import type { ImageCallback } from "@jimp/core/types";
 
 async function getAllRawImages(): Promise<string[]> {
   return (await promises.readdir('static/art-images/'))
@@ -10,35 +14,46 @@ async function getAllRawImages(): Promise<string[]> {
 
 async function resizeAndConvert(inputPath, scale, quality, outputPath) {
   const file = await Jimp.read(inputPath)
-  await file.scale(scale).quality(quality).write(outputPath)
+  // Origional Size
+  if (scale === undefined) {
+    return file.quality(quality).write(outputPath)
+  }
+  // Scaled sizes
+  // Width is greater, try to set it to scale and keep height on auto
+  if (file.getWidth() >= file.getHeight()) {
+    // If the width is less than the target, just ouput the origional
+    if (file.getWidth() < scale) return file.quality(quality).write(outputPath)
+    // Otherwise, output the scaled thing
+    return file.resize(scale, Jimp.AUTO).quality(quality).write(outputPath)
+  } else {
+    // If the height is less than the target, just ouput the origional
+    if (file.getHeight() < scale) return file.quality(quality).write(outputPath)
+    // Otherwise, output the scaled thing
+    return file.resize(Jimp.AUTO, scale).quality(quality).write(outputPath)
+  }
 }
 
 async function convertImagePromises(path: string) {
   const outputs = [
     {
-      scale: 1,
+      maxSize: undefined,
       quality: 95,
-      suffix: '.1_1.jpg'
+      suffix: '.origional.jpg'
     },
     {
-      scale: 0.75,
+      maxSize: 1000,
       quality: 95,
-      suffix: '.3_4.jpg'
+      suffix: '.large.jpg'
     },
     {
-      scale: 0.5,
+      maxSize: 600,
       quality: 95,
-      suffix: '.1_2.jpg'
-    },
-    {
-      scale: 0.25,
-      quality: 95,
-      suffix: '.1_4.jpg'
+      suffix: '.small.jpg'
     }
   ]
 
   return outputs.map((output) => {
-    return resizeAndConvert(path, output.scale, output.quality, `${path}${output.suffix}`)
+    return resizeAndConvert(path, output.maxSize, output.quality, `${path}${output.suffix}`)
   })
 }
 
