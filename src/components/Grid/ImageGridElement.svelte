@@ -29,7 +29,6 @@
 		`}
   role="img"
   on:click={() => onClickProp(imageDatum)}
-  on:mouseover={() => fetch(imageDatum.url)}
   alt={imageDatum.alt}
 />
 
