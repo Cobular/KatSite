@@ -88,5 +88,80 @@ export const ImageData: ImageDatum[] = [
       x: 'center',
       y: 'center'
     }
+  },
+  // Row4
+  {
+    url: '/art-images/9.png',
+    alt: 'Stressed',
+    crop: {
+      x: 'center',
+      y: 'top'
+    }
+  },
+  {
+    url: '/art-images/10.png',
+    alt: 'Despair',
+    crop: {
+      x: 'center',
+      y: 'top'
+    }
+  },
+  {
+    url: '/art-images/11.png',
+    alt: 'Ether',
+    crop: {
+      x: 'center',
+      y: 'top'
+    }
+  },
+  // Row5
+  {
+    url: '/art-images/12.png',
+    alt: 'Leg',
+    crop: {
+      x: 'center',
+      y: 'center'
+    }
+  },
+  {
+    url: '/art-images/13.png',
+    alt: 'Grei Doodle',
+    crop: {
+      x: 'center',
+      y: 'center'
+    }
+  },
+  {
+    url: '/art-images/14.png',
+    alt: 'Auctate',
+    crop: {
+      x: 'center',
+      y: 'top'
+    }
+  },
+  // Row6
+  {
+    url: '/art-images/15.png',
+    alt: 'Ham Child',
+    crop: {
+      x: 'center',
+      y: 'center'
+    }
+  },
+  {
+    url: '/art-images/16.png',
+    alt: 'Fervor',
+    crop: {
+      x: 'center',
+      y: 'top'
+    }
+  },
+  {
+    url: '/art-images/17.png',
+    alt: 'Nidoni',
+    crop: {
+      x: 'center',
+      y: 'top'
+    }
   }
 ]

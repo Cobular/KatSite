@@ -2,6 +2,6 @@
   import ImageModalGrid from '../components/Grid/ImageModalGrid.svelte'
 </script>
 
-<div>
+<main>
   <ImageModalGrid />
-</div>
+</main>

@@ -20,7 +20,7 @@
   {#if showModal}
     <div id="modal" on:click={() => hideModalFunc()}>
       <div id="modal-inner">
-		<Zoom src={imageData.url} alt={imageData.alt} bind:this={zoom} />
+		<img src={imageData.url} alt={imageData.alt} />
       </div>
     </div>
   {/if}

@@ -1,10 +1,26 @@
 <script lang="ts">
+
 </script>
 
-<p>FOOT!!!!</p>
+<footer>
+  <h1>
+    FOOOTTT!!!!
+  </h1>
+</footer>
 
 <style>
-  p {
-    font-weight: 400;
+  footer {
+    background-color: white;
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		padding: 10px;
+		padding-bottom: 2px;
+		align-items: baseline;
   }
+  
+  h1 {
+		margin-right: 20px;
+		font-size: 24px;
+	}
 </style>

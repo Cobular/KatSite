@@ -24,20 +24,28 @@
   }
 </script>
 
-<div class="content wide">
-  <ImageGrid displayImageModalFunc={displayModal} />
-  <ImageModal {showModal} imageData={modalInformation} hideModalFunc={hideModal} />
+<div class="contentWrapper wide">
+	<div class="content">
+	  <ImageGrid displayImageModalFunc={displayModal} />
+	  <ImageModal {showModal} imageData={modalInformation} hideModalFunc={hideModal} />
+	</div>
 </div>
 
 <style>
-  .content {
-    max-width: 900px;
+  .contentWrapper {
+	max-width: 900px;
     margin: auto;
+  }
+
+  .content {
+    margin-left: 10px;
+    margin-right: 10px;
     margin-top: 20px;
+	margin-bottom: 20px;
     background-color: white;
   }
 
-  .content.wide {
+  .wide {
     max-width: 1150px;
   }
 </style>
