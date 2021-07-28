@@ -4,17 +4,33 @@
 
 	export let imageDatum: ImageDatum
 	export let onClickProp: DisplayModal
+
+  function background_image_creator(url: string) {
+    return `
+    background-image: url(${url}.1_1.jpg); 
+    background-image: -webkit-image-set(
+      url(${url}.1_1.jpg) 4x,
+      url(${url}.1_2.jpg) 2x,
+      url(${url}.1_4.jpg) 1x);
+    background-image: image-set(
+      url(${url}.1_1.jpg) 4x,
+      url(${url}.1_2.jpg) 2x);
+      url(${url}.1_4.jpg) 1x);
+    `;
+  }
 </script>
 
+<!-- svelte-ignore a11y-mouse-events-have-key-events -->
 <div
 	class="image"
 	style={`
-		background-image: url(${imageDatum.url}); 
+		${background_image_creator(imageDatum.url)} 
 		background-position-x: ${imageDatum.crop.x}; 
 		background-position-y: ${imageDatum.crop.y};
 		`}
 	role="img"
 	on:click={() => onClickProp(imageDatum)}
+  on:mouseover={() => fetch(imageDatum.url)}
 	alt={imageDatum.alt}
 />
 

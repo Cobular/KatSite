@@ -16,7 +16,7 @@ export interface ImageDatum {
 export const ImageData: ImageDatum[] = [
   // Row1
   {
-    url: '/art-images/row1/1.png',
+    url: '/art-images/0.png',
     alt: 'Demon Girl',
     crop: {
       x: 'center',
@@ -24,7 +24,7 @@ export const ImageData: ImageDatum[] = [
     }
   },
   {
-    url: '/art-images/row1/2.png',
+    url: '/art-images/1.png',
     alt: 'Waterfall',
     crop: {
       x: 'left',
@@ -32,7 +32,7 @@ export const ImageData: ImageDatum[] = [
     }
   },
   {
-    url: '/art-images/row1/3.png',
+    url: '/art-images/2.png',
     alt: 'Gloves',
     crop: {
       x: 'center',
@@ -41,7 +41,7 @@ export const ImageData: ImageDatum[] = [
   },
   // Row2
   {
-    url: '/art-images/row2/1.png',
+    url: '/art-images/3.png',
     alt: 'Pride Month',
     crop: {
       x: 'center',
@@ -49,7 +49,7 @@ export const ImageData: ImageDatum[] = [
     }
   },
   {
-    url: '/art-images/row2/2.png',
+    url: '/art-images/4.png',
     alt: 'Baseball Card',
     crop: {
       x: 'center',
@@ -57,7 +57,7 @@ export const ImageData: ImageDatum[] = [
     }
   },
   {
-    url: '/art-images/row2/3.png',
+    url: '/art-images/5.png',
     alt: 'Quintiverse',
     crop: {
       x: 'center',
@@ -66,7 +66,7 @@ export const ImageData: ImageDatum[] = [
   },
   // Row3
   {
-    url: '/art-images/row3/1.png',
+    url: '/art-images/6.png',
     alt: 'Pride Month',
     crop: {
       x: 'center',
@@ -74,7 +74,7 @@ export const ImageData: ImageDatum[] = [
     }
   },
   {
-    url: '/art-images/row3/2.png',
+    url: '/art-images/7.png',
     alt: 'Baseball Card',
     crop: {
       x: 'center',
@@ -82,7 +82,7 @@ export const ImageData: ImageDatum[] = [
     }
   },
   {
-    url: '/art-images/row3/3.png',
+    url: '/art-images/8.png',
     alt: 'Quintiverse',
     crop: {
       x: 'center',

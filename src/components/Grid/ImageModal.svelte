@@ -4,7 +4,14 @@
   export let showModal: boolean
   export let imageData: ImageDatum
   export let hideModalFunc: CallableFunction
+
+  function handleKeydown(event) {
+	if (event.key == "Escape")
+	hideModalFunc()
+  }
 </script>
+
+<svelte:window on:keydown={handleKeydown}/>
 
 <div>
   {#if showModal}
