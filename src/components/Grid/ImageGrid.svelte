@@ -1,38 +1,34 @@
 <script lang="ts">
-    import ImageGridElement from './ImageGridElement.svelte'
+  import ImageGridElement from './ImageGridElement.svelte'
 
-    import type { ImagesResponse } from '../../routes/api/get_images'
+  import type { DisplayModal } from '../Grid/ImageModalGrid.svelte'
 
-    let loadResponse: ImagesResponse = []
+  import { ImageData } from '../../image_data'
 
-    async function load() {
-        const url = '/api/get_images'
-        console.log("start")
-		const res = await fetch(url)
-
-		if (res.ok) {
-			loadResponse = await res.json()
-		}
-    }
-
-    load()
+  export let displayImageModalFunc: DisplayModal
 </script>
 
 <div id="grid">
-	{#each loadResponse as row}
-		{#each row as element}
-			<ImageGridElement url={element} alt="altttt" />
-		{/each}
-	{/each}
+  {#each ImageData as row}
+    <ImageGridElement imageDatum={row} onClickProp={displayImageModalFunc} />
+  {/each}
 </div>
 
 <style>
-	#grid {
-		display: grid;
-		background-color: pink;
-		padding: 5px;
-		margin: 0;
-		width: 100%;
-		grid-template-columns: 1fr 1fr 1fr;
-	}
+  #grid {
+    /* Grid */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    row-gap: 20px;
+    column-gap: 20px;
+
+    background-color: white;
+    padding: 10px;
+    margin: 0;
+    width: 100%;
+
+    border-color: var(--theme-dark);
+    border-width: 3px;
+    border-style: solid;
+  }
 </style>
