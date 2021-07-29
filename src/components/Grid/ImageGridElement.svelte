@@ -7,7 +7,7 @@
 
   function background_image_creator(url: string) {
     return `
-    background-image: url(${url}.large.jpg); 
+    background-image: url(${url}.large.jpg);
     background-image: -webkit-image-set(
       url(${url}.large.jpg) 3x,
       url(${url}.small.jpg) 1x);
@@ -22,15 +22,14 @@
 <div
   class="image"
   style={`
-		${background_image_creator(imageDatum.url)} 
-		background-position-x: ${imageDatum.crop.x}; 
+		${background_image_creator(imageDatum.url)}
+		background-position-x: ${imageDatum.crop.x};
 		background-position-y: ${imageDatum.crop.y};
     position: relitave;
 		`}
   role="img"
   on:click={() => onClickProp(imageDatum)}
-  alt={imageDatum.alt}
-/>
+  alt={imageDatum.alt}></div>
 
 <style>
   .image {

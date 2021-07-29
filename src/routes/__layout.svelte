@@ -25,6 +25,7 @@
     background-image: url('/img/background.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-size: cover;
   }
 
   :global(:root) {
@@ -40,6 +41,4 @@
   :global(img) {
     max-width: 100%;
   }
-
-  
 </style>

@@ -4,3 +4,4 @@ node_modules
 /package
 **/*.png*.jpg
 build
+.idea/
