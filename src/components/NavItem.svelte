@@ -18,7 +18,7 @@
 
   a {
     text-decoration: none;
-    color: var(--theme-light);
+    color: var(--theme-dark);
   }
 
   a:hover {

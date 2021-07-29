@@ -1,4 +1,5 @@
 <script lang="ts">
+  import BackToTop from '../components/BackToTop.svelte'
   import Footer from '../components/Footer.svelte'
   import Navigation from '../components/Navigation.svelte'
 </script>
@@ -8,6 +9,7 @@
 <slot />
 
 <Footer />
+<BackToTop />
 
 <style>
   :global(*) {
@@ -15,6 +17,7 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     color: var(--theme-dark);
+    scroll-behavior: smooth;
   }
 
   :global(body) {
@@ -38,16 +41,5 @@
     max-width: 100%;
   }
 
-  /* .link {
-    border-right: #434343;
-    border-right-width: 1px;
-    border-right-style: solid;
-    margin-right: 5px;
-    padding-right: 5px;
-    font-size: 18px;
-  }
-
-  .link:last-of-type {
-    border-right-style: none;
-  } */
+  
 </style>

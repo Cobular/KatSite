@@ -49,4 +49,17 @@
   a {
     text-decoration: none;
   }
+
+  :global(.nav-item) {
+    border-right: #434343;
+    border-right-width: 1px;
+    border-right-style: solid;
+    margin-right: 5px;
+    padding-right: 5px;
+    font-size: 18px;
+  }
+
+  :global(.nav-item:last-of-type) {
+    border-right-style: none;
+  }
 </style>
