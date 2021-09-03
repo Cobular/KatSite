@@ -29,7 +29,8 @@
 		`}
   role="img"
   on:click={() => onClickProp(imageDatum)}
-  alt={imageDatum.alt}></div>
+  alt={imageDatum.alt}
+  title={'title' in imageDatum ? imageDatum.title : undefined}></div>
 
 <style>
   .image {

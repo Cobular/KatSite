@@ -1,13 +1,10 @@
 <script lang="ts">
-  import Zoom from 'svelte-zoom'
-
   import type { ImageDatum } from 'src/image_data'
 
   export let showModal: boolean
   export let imageData: ImageDatum
   export let hideModalFunc: CallableFunction
 
-  let zoom
 
   function handleKeydown(event) {
     if (event.key == 'Escape') hideModalFunc()
@@ -20,7 +17,7 @@
   {#if showModal}
     <div id="modal" on:click={() => hideModalFunc()}>
       <div id="modal-inner">
-		<img src={imageData.url} alt={imageData.alt} />
+		<img src={imageData.url} alt={imageData.alt} title={'title' in imageData ? imageData.title : undefined}/>
       </div>
     </div>
   {/if}
