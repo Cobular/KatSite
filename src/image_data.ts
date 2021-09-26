@@ -91,6 +91,14 @@ export const ImageData: ImageDatum[] = [
       y: 'center'
     }
   },
+  {
+    url: '/art-images/18.png',
+    alt: 'A colored self portrait of myself feeing uneasy.',
+    crop: {
+      x: 'center',
+      y: 'top'
+    }
+  },
   // Row4
   {
     url: '/art-images/9.png',
@@ -165,5 +173,5 @@ export const ImageData: ImageDatum[] = [
       x: 'center',
       y: 'top'
     }
-  }
+  },
 ]
