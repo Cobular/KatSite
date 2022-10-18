@@ -3,13 +3,14 @@
 
   import type { DisplayModal } from '../Grid/ImageModalGrid.svelte'
 
-  import { ImageData } from '../../image_data'
+  import type { ImageDatum } from '../../image_data'
 
+  export let image_data: ImageDatum[];
   export let displayImageModalFunc: DisplayModal
 </script>
 
 <div id="grid">
-  {#each ImageData as row}
+  {#each image_data as row}
     <ImageGridElement imageDatum={row} onClickProp={displayImageModalFunc} />
   {/each}
 </div>

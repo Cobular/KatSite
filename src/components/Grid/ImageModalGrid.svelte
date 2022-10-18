@@ -9,6 +9,8 @@
   import ImageModal from './ImageModal.svelte'
   import type { ImageDatum } from 'src/image_data'
 
+  export let image_data: ImageDatum[];
+
   var showModal = false
   var modalInformation: ImageDatum = undefined
 
@@ -26,7 +28,7 @@
 
 <div class="contentWrapper wide">
 	<div class="content">
-	  <ImageGrid displayImageModalFunc={displayModal} />
+	  <ImageGrid displayImageModalFunc={displayModal} {image_data} />
 	  <ImageModal {showModal} imageData={modalInformation} hideModalFunc={hideModal} />
 	</div>
 </div>

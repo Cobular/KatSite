@@ -14,7 +14,86 @@ export interface ImageDatum {
   crop: Crop
 }
 
-export const ImageData: ImageDatum[] = [
+export const IllustrativeImageData: ImageDatum[] = [
+  // Row4
+  {
+    url: '/art-images/9.png',
+    alt: 'A "self-portrait" of myself expressing feelings of panic and worry.',
+    crop: {
+      x: 'center',
+      y: 'top'
+    }
+  },
+  {
+    url: '/art-images/10.png',
+    alt: 'A tall figure white figure with trails of a black substance running down their whole body. They seem to be looking up at an unseen source of the substance, them reaching out with one hand to collect it. At the figure’s feet is a large collection of this black substance.',
+    crop: {
+      x: 'center',
+      y: 'top'
+    }
+  },
+  {
+    url: '/art-images/11.png',
+    alt: 'A display of fish-like creatures being fished out of holes by hooks from above. In the background is a black circular object, a kin to the sun in the sky.',
+    crop: {
+      x: 'center',
+      y: 'top'
+    }
+  },
+  // Row5
+  {
+    url: '/art-images/12.png',
+    alt: 'A leg without a foot having different pieces of itself removed in a geometric fashion. The top and bottom of the leg are wrapped in a ribbon-like bandage.',
+    crop: {
+      x: 'center',
+      y: 'center'
+    }
+  },
+  {
+    url: '/art-images/13.png',
+    alt: 'A headshot of my OC "Grei" with her name written out next to her in a stylized manner.',
+    crop: {
+      x: 'center',
+      y: 'center'
+    }
+  },
+  {
+    url: '/art-images/14.png',
+    alt: 'A headshot of my OC "Auctate" with their name written out next to them in a stylized manner.',
+    crop: {
+      x: 'center',
+      y: 'top'
+    }
+  },
+  // Row6
+  {
+    url: '/art-images/15.png',
+    alt: 'An odd ham-like creature. Above it, the words "Ham Child" are written in a stylized manner.',
+    crop: {
+      x: 'center',
+      y: 'center'
+    }
+  },
+  {
+    url: '/art-images/16.png',
+    alt: 'A creature wearing shorts and a cropped sweater. She had tentacles where her hands should be and her pupiless eyes seem to emit energy in an "antler-like fashion".',
+    crop: {
+      x: 'center',
+      y: 'top'
+    }
+  },
+  {
+    url: '/art-images/17.png',
+    alt: 'My OC, "Nidoni", charging at an unknown entity, giant leek at the ready. Different parts of her body are bulked up to aid in her advance.',
+    crop: {
+      x: 'center',
+      y: 'top'
+    }
+  },
+]
+
+
+export const GraphicImageData: ImageDatum[] = [
   // Row1
   {
     url: '/art-images/0.png',

@@ -8,8 +8,12 @@
 
   const navItems: NavDatum[] = [
     {
-      label: 'Home',
+      label: 'Graphic',
       url: '/'
+    },
+    {
+      label: 'Illustrated',
+      url: '/illustrated'
     },
     {
       label: 'Contact Info',
