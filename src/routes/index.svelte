@@ -5,6 +5,7 @@
 
 <svelte:head>
   <meta name='description' content='A gallery of some of my graphical works!'/>
+  <title>Shushicate - Illustrations</title>
 </svelte:head>
 
 <main>
