@@ -7,13 +7,19 @@ import Jimp from 'jimp'
 import type { ImageCallback } from "@jimp/core/types";
 
 async function getAllRawImages(): Promise<string[]> {
-  return (await promises.readdir('static/art-images/'))
+  const graphics_images = (await promises.readdir('static/graphics/'))
     .filter((fileName) => fileName.endsWith('.png'))
-    .map((fileName) => join('static/art-images', '/', fileName))
+    .map((fileName) => join('static/graphics', '/', fileName))
+
+  const illustration_images = (await promises.readdir('static/illustration/'))
+    .filter((fileName) => fileName.endsWith('.png'))
+    .map((fileName) => join('static/illustration', '/', fileName))
+
+  return [...graphics_images, ...illustration_images]
 }
 
 async function resizeAndConvert(inputPath, scale, quality, outputPath) {
-  const file = await Jimp.read(inputPath)
+  const file = (await Jimp.read(inputPath)).background(0xFFFFFFFF)
   // Origional Size
   if (scale === undefined) {
     return file.quality(quality).write(outputPath)

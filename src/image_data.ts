@@ -15,79 +15,238 @@ export interface ImageDatum {
 }
 
 export const IllustrativeImageData: ImageDatum[] = [
-  // Row4
+  // Row 1
   {
-    url: '/art-images/9.png',
-    alt: 'A "self-portrait" of myself expressing feelings of panic and worry.',
+    url: '/illustration/01_Decending_3.png',
+    alt: '',
+    crop: {
+      x: 'center',
+      y: 'bottom'
+    }
+  },
+  {
+    url: '/illustration/02_Descending_1.png',
+    alt: '',
+    crop: {
+      x: 'center',
+      y: 'bottom'
+    }
+  },
+  {
+    url: '/illustration/03_Descending_2.png',
+    alt: '',
+    crop: {
+      x: 'center',
+      y: 'top'
+    }
+  },
+  // Row 2
+  {
+    url: '/illustration/04_Desolate_Transfer_3.png',
+    alt: '',
     crop: {
       x: 'center',
       y: 'top'
     }
   },
   {
-    url: '/art-images/10.png',
-    alt: 'A tall figure white figure with trails of a black substance running down their whole body. They seem to be looking up at an unseen source of the substance, them reaching out with one hand to collect it. At the figure’s feet is a large collection of this black substance.',
-    crop: {
-      x: 'center',
-      y: 'top'
-    }
-  },
-  {
-    url: '/art-images/11.png',
-    alt: 'A display of fish-like creatures being fished out of holes by hooks from above. In the background is a black circular object, a kin to the sun in the sky.',
-    crop: {
-      x: 'center',
-      y: 'top'
-    }
-  },
-  // Row5
-  {
-    url: '/art-images/12.png',
-    alt: 'A leg without a foot having different pieces of itself removed in a geometric fashion. The top and bottom of the leg are wrapped in a ribbon-like bandage.',
+    url: '/illustration/05_stretched_cat.png',
+    alt: '',
     crop: {
       x: 'center',
       y: 'center'
     }
   },
   {
-    url: '/art-images/13.png',
-    alt: 'A headshot of my OC "Grei" with her name written out next to her in a stylized manner.',
+    url: '/illustration/06_Grei_cute_half_body_2hr.png',
+    alt: '',
+    crop: {
+      x: 'center',
+      y: 'top'
+    }
+  },
+  // Row 3
+  {
+    url: '/illustration/07_grei_upgreide_bg_2.png',
+    alt: '',
+    crop: {
+      x: 'center',
+      y: 'top'
+    }
+  },
+  {
+    url: '/illustration/09_tentacle_mind_shadowless.png',
+    alt: '',
     crop: {
       x: 'center',
       y: 'center'
     }
   },
   {
-    url: '/art-images/14.png',
-    alt: 'A headshot of my OC "Auctate" with their name written out next to them in a stylized manner.',
+    url: '/illustration/10_FutureModern_Harlem.png',
+    alt: '',
     crop: {
       x: 'center',
       y: 'top'
     }
   },
-  // Row6
+  // Row 4
   {
-    url: '/art-images/15.png',
-    alt: 'An odd ham-like creature. Above it, the words "Ham Child" are written in a stylized manner.',
+    url: '/illustration/11_eversnow_full.png',
+    alt: '',
+    crop: {
+      x: 'center',
+      y: 'top'
+    }
+  },
+  {
+    url: '/illustration/12_cleric_cleric.png',
+    alt: '',
     crop: {
       x: 'center',
       y: 'center'
     }
   },
   {
-    url: '/art-images/16.png',
-    alt: 'A creature wearing shorts and a cropped sweater. She had tentacles where her hands should be and her pupiless eyes seem to emit energy in an "antler-like fashion".',
+    url: '/illustration/13_the_rot.png',
+    alt: '',
+    crop: {
+      x: 'center',
+      y: 'top'
+    }
+  },
+  // Row 5
+  {
+    url: '/illustration/14_distressing_Infatuation.png',
+    alt: '',
+    crop: {
+      x: 'center',
+      y: 'bottom'
+    }
+  },
+  {
+    url: '/illustration/15_Willow_1.0_Character_Sheet.png',
+    alt: '',
+    crop: {
+      x: 'center',
+      y: 'center'
+    }
+  },
+  {
+    url: '/illustration/16_shoe_quad.png',
+    alt: '',
+    crop: {
+      x: 'center',
+      y: 'top'
+    }
+  },
+  // Row 6
+  {
+    url: '/illustration/17_yup.png',
+    alt: '',
+    crop: {
+      x: 'center',
+      y: 'bottom'
+    }
+  },
+  {
+    url: '/illustration/18_tex_kirby_1.png',
+    alt: '',
+    crop: {
+      x: 'center',
+      y: 'center'
+    }
+  },
+  {
+    url: '/illustration/19_willow_possessed.png',
+    alt: '',
+    crop: {
+      x: 'center',
+      y: 'top'
+    }
+  },
+  // Row 7
+  {
+    url: '/illustration/20_eversnow_sketch.png',
+    alt: '',
     crop: {
       x: 'center',
       y: 'top'
     }
   },
   {
-    url: '/art-images/17.png',
-    alt: 'My OC, "Nidoni", charging at an unknown entity, giant leek at the ready. Different parts of her body are bulked up to aid in her advance.',
+    url: '/illustration/21_FutureModern_Harlem_sketch_and_concept.png',
+    alt: '',
+    crop: {
+      x: 'center',
+      y: 'center'
+    }
+  },
+  {
+    url: '/illustration/22_fervour_still_lineart.png',
+    alt: '',
     crop: {
       x: 'center',
       y: 'top'
+    }
+  },
+  // Row 8
+  {
+    url: '/illustration/23_ink_cover.png',
+    alt: '',
+    crop: {
+      x: 'center',
+      y: 'top'
+    }
+  },
+  {
+    url: '/illustration/24_Grei_Sketch_On_New_PC.png',
+    alt: '',
+    crop: {
+      x: 'center',
+      y: 'center'
+    }
+  },
+  {
+    url: '/illustration/25_foofl.png',
+    alt: '',
+    crop: {
+      x: 'center',
+      y: 'top'
+    }
+  },
+  // Row 9
+  {
+    url: '/illustration/26_walrus_dough_dimmadome.png',
+    alt: '',
+    crop: {
+      x: 'center',
+      y: 'bottom'
+    }
+  },
+  {
+    url: '/illustration/27_hades_div_sho_3x_prep.png',
+    alt: '',
+    crop: {
+      x: 'center',
+      y: 'center'
+    }
+  },
+  {
+    url: '/illustration/28_kathrine_supervisor_lineart.png',
+    alt: '',
+    crop: {
+      x: 'center',
+      y: 'top'
+    }
+  },
+  // Row 10
+  {
+    url: '/illustration/29_wacky_tea_party_sketch_lineart.png',
+    alt: '',
+    crop: {
+      x: 'center',
+      y: 'bottom'
     }
   },
 ]
@@ -96,161 +255,132 @@ export const IllustrativeImageData: ImageDatum[] = [
 export const GraphicImageData: ImageDatum[] = [
   // Row1
   {
-    url: '/art-images/0.png',
-    alt: 'A distressed tiefling woman in front of an elaborate display of glowing orange circles.',
+    url: '/graphics/01_Sponsor_Deck_Cover.png',
+    alt: '',
     title: "thing idk",
+    crop: {
+      x: 'right',
+      y: 'center'
+    }
+  },
+  {
+    url: '/graphics/02_TGEX_22_Style_Guide.png',
+    alt: '',
     crop: {
       x: 'center',
       y: 'top'
     }
   },
   {
-    url: '/art-images/1.png',
-    alt: 'A postcard advertising the fictional location known as “Fire Falls”. It includes imagery of red rocks and orange waters',
+    url: '/graphics/03_TGEX_2022_EP_Cover.png',
+    alt: '',
+    crop: {
+      x: 'center',
+      y: 'center'
+    }
+  },
+  // Row 2
+  {
+    url: '/graphics/04_Panel_VA_Genshin_1920x1080.png',
+    alt: '',
+    title: "thing idk",
+    crop: {
+      x: 'center',
+      y: 'center'
+    }
+  },
+  {
+    url: '/graphics/05_TGEX_21_Discord_Server_Picture.png',
+    alt: '',
+    crop: {
+      x: 'center',
+      y: 'top'
+    }
+  },
+  {
+    url: '/graphics/06_Apex_Stream_Overlay_Rehaul.png',
+    alt: '',
     crop: {
       x: 'left',
       y: 'center'
     }
   },
+  // Row 3
   {
-    url: '/art-images/2.png',
-    alt: 'A fox girl who’s presumably addressed as “Harlem”. She is equipped with giant club-like gauntlets and a matching motorcycle helmet. To her left is an orange cloud that wraps above her. ',
-    crop: {
-      x: 'center',
-      y: 'center'
-    }
-  },
-  // Row2
-  {
-    url: '/art-images/3.png',
-    alt: 'An image of my OC "Grei" showing her support for Pride Month and the LGBTQIA+ Community. She’s backed by the "Progress" Pride Flag.',
-    crop: {
-      x: 'center',
-      y: 'top'
-    }
-  },
-  {
-    url: '/art-images/4.png',
-    alt: 'A mostly green baseball card featuring an OC of mine (Nidoni). To the right of the card it reads "A Baseball Card"',
+    url: '/graphics/07_APEX_Tourney_Start_Screen.png',
+    alt: '',
+    title: "thing idk",
     crop: {
       x: 'center',
       y: 'center'
     }
   },
   {
-    url: '/art-images/5.png',
-    alt: 'A concept for a comic book series titled "The End Of The Quintilliverse". It’s mostly green and white, and features a person kneeling on the ground in front of a mushroom cloud.',
+    url: '/graphics/08_div_sho_title_graphic_colored_no_drop_shadow.png',
+    alt: '',
     crop: {
       x: 'center',
       y: 'top'
     }
   },
-  // Row3
   {
-    url: '/art-images/6.png',
-    alt: 'A smiling planet and its tiny moon floating in outer space. The planet has a thin white ring around it.',
+    url: '/graphics/09_div_sho_logo_preview_2.png',
+    alt: '',
     crop: {
       x: 'center',
       y: 'center'
     }
   },
+  // Row 4
   {
-    url: '/art-images/7.png',
-    alt: 'A top heavy blue robot surrounded by the text “Big Robo”. There are wires connected to its hands and back.',
+    url: '/graphics/10_Experimental_Font_Sets_Kat.png',
+    alt: '',
+    title: "thing idk",
+    crop: {
+      x: 'right',
+      y: 'center'
+    }
+  },
+  {
+    url: '/graphics/11_Divisions_and_partners.png',
+    alt: '',
+    crop: {
+      x: 'center',
+      y: 'top'
+    }
+  },
+  {
+    url: '/graphics/12_PRIDE_BANNER.png',
+    alt: '',
     crop: {
       x: 'center',
       y: 'center'
     }
   },
+  // Row 5
   {
-    url: '/art-images/8.png',
-    alt: 'A series of four high top sneakers, each being similar in model but different in color scheme. Additionally, each has a small Transgender Pride Flag pin near the top.',
+    url: '/graphics/13_PRIDE_ICON_3.png',
+    alt: '',
+    title: "thing idk",
     crop: {
-      x: 'center',
+      x: 'right',
       y: 'center'
     }
   },
   {
-    url: '/art-images/18.png',
-    alt: 'A colored self portrait of myself feeing uneasy.',
-    crop: {
-      x: 'center',
-      y: 'top'
-    }
-  },
-  // Row4
-  {
-    url: '/art-images/9.png',
-    alt: 'A "self-portrait" of myself expressing feelings of panic and worry.',
+    url: '/graphics/14_Cross_Campus_College_Class_Point_Tracker.png',
+    alt: '',
     crop: {
       x: 'center',
       y: 'top'
     }
   },
   {
-    url: '/art-images/10.png',
-    alt: 'A tall figure white figure with trails of a black substance running down their whole body. They seem to be looking up at an unseen source of the substance, them reaching out with one hand to collect it. At the figure’s feet is a large collection of this black substance.',
+    url: '/graphics/15_Fall_21_Recruitment_Flyer_Final.png',
+    alt: '',
     crop: {
-      x: 'center',
-      y: 'top'
-    }
-  },
-  {
-    url: '/art-images/11.png',
-    alt: 'A display of fish-like creatures being fished out of holes by hooks from above. In the background is a black circular object, a kin to the sun in the sky.',
-    crop: {
-      x: 'center',
-      y: 'top'
-    }
-  },
-  // Row5
-  {
-    url: '/art-images/12.png',
-    alt: 'A leg without a foot having different pieces of itself removed in a geometric fashion. The top and bottom of the leg are wrapped in a ribbon-like bandage.',
-    crop: {
-      x: 'center',
+      x: 'left',
       y: 'center'
-    }
-  },
-  {
-    url: '/art-images/13.png',
-    alt: 'A headshot of my OC "Grei" with her name written out next to her in a stylized manner.',
-    crop: {
-      x: 'center',
-      y: 'center'
-    }
-  },
-  {
-    url: '/art-images/14.png',
-    alt: 'A headshot of my OC "Auctate" with their name written out next to them in a stylized manner.',
-    crop: {
-      x: 'center',
-      y: 'top'
-    }
-  },
-  // Row6
-  {
-    url: '/art-images/15.png',
-    alt: 'An odd ham-like creature. Above it, the words "Ham Child" are written in a stylized manner.',
-    crop: {
-      x: 'center',
-      y: 'center'
-    }
-  },
-  {
-    url: '/art-images/16.png',
-    alt: 'A creature wearing shorts and a cropped sweater. She had tentacles where her hands should be and her pupiless eyes seem to emit energy in an "antler-like fashion".',
-    crop: {
-      x: 'center',
-      y: 'top'
-    }
-  },
-  {
-    url: '/art-images/17.png',
-    alt: 'My OC, "Nidoni", charging at an unknown entity, giant leek at the ready. Different parts of her body are bulked up to aid in her advance.',
-    crop: {
-      x: 'center',
-      y: 'top'
     }
   },
 ]

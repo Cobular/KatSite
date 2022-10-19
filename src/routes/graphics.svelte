@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { IllustrativeImageData } from '../image_data'
+  import { GraphicImageData } from '../image_data'
   import ImageModalGrid from '../components/Grid/ImageModalGrid.svelte'
 </script>
 
@@ -8,5 +8,5 @@
 </svelte:head>
 
 <main>
-  <ImageModalGrid image_data={IllustrativeImageData}/>
+  <ImageModalGrid image_data={GraphicImageData}/>
 </main>

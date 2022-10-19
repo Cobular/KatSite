@@ -15,8 +15,8 @@
       alt="An icon of what appears to be a green mototcycle helmet with cat ears. It's very cute."
     />
     <p>
-      Made with 🧡🧡 by @Cobular - Contact for Web Design at <a href="http://www.cobular.com"
-        >www.cobular.com</a
+      Made with 🧡🧡 by @Cobular - Contact for Web Design at <a href="https://cobular.com"
+        >cobular.com</a
       >!
     </p>
   </div>
